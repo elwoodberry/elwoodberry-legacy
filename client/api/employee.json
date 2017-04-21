@@ -1,0 +1,33 @@
+[{
+	"firstName": "Elwood",
+	"middleName": "S.",
+	"lastName": "Berry III",
+	"title": "Full Stack JavaScript Developer",
+	"summary": "M.E.A.N Stack JavaScript Developer working in NodeJS, Express, Angular 2, MongoDB, Angular Material 2, Karma, Jasmine, StripeJS, etc.",
+	"phone": "469.609.7444",
+	"email": "me@elwoodberry.com",
+	"website": "http://elwoodberry.com",
+	"location": "Columbus, OH USA",
+	"objective": "To be a senior level full stack javascript developer for a tech company with less than 500 employees. I am willing to work remote to achieve this.",
+	"type": [{
+		"typeid": 0,
+		"typeName": "Employee"
+	}, {
+		"typeid": 1,
+		"typeName": "Contract/Project"
+	}],
+	"status": [{
+		"statusid": 0,
+		"statusname": "Full TIme"
+	}, {
+		"statusid": 1,
+		"statusname": "Part TIme"
+	}, {
+		"statusid": 3,
+		"statusname": "Per Diem"
+	}],
+	"period": "10 Years",
+	"languages": "English",
+	"citizenship": "US Citizen"
+
+}]

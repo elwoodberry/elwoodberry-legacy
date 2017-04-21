@@ -1,0 +1,123 @@
+[{
+	"projects": [{
+		"id": "0",
+		"title": "ElwoodBerry.com Single Page Application(SPA)",
+		"description": "A simple solution to the distribution and display of Elwood Berry's most current resume and portfolio projects.",
+		"url": "https://github.com/elwoodberry/elwoodberry",
+		"imgurl": "http://static4.gamespot.com/uploads/original/1539/15391776/3099350-screen+shot+2016-07-23+at+1.18.13+pm.png",
+		"stack": [{
+			"id": "00",
+			"package": "Angular 2.4",
+			"url": "https://angular.io/"
+		}, {
+			"id": "01",
+			"package": "Gulp",
+			"url": "https://www.npmjs.com/package/gulp"
+		}, {
+			"id": "02",
+			"package": "SASS",
+			"url": "https://www.npmjs.com/package/gulp-sass"
+		}, {
+			"id": "04",
+			"package": "TypeScript",
+			"url": "https://www.npmjs.com/package/typescript"
+		}, {
+			"id": "05",
+			"package": "Mongo.js",
+			"url": "https://www.npmjs.com/package/mongojs"
+		}],
+		"modified": "FEB 4 2017"
+	}, {
+		"id": "1",
+		"title": "SimpleStrips.com Single Page Application(SPA)",
+		"description": "Diabetic medical supply distribution company simple vendor intake solution. Resposive web based desktop and mobile solution for the management of vendor data, appointments with vendors and sales data.",
+		"url": "https://github.com/elwoodberry/elwoodberry",
+		"imgurl": "http://static3.gamespot.com/uploads/original/1539/15391776/3099344-screen+shot+2016-07-23+at+1.15.40+pm.png",
+		"stack": [{
+			"id": "00",
+			"package": "Angular 2.4",
+			"url": "https://angular.io/"
+		}, {
+			"id": "01",
+			"package": "Gulp",
+			"url": "https://www.npmjs.com/package/gulp"
+		}, {
+			"id": "02",
+			"package": "SASS",
+			"url": "https://www.npmjs.com/package/gulp-sass"
+		}, {
+			"id": "04",
+			"package": "TypeScript",
+			"url": "https://www.npmjs.com/package/typescript"
+		}, {
+			"id": "05",
+			"package": "Mongo.js",
+			"url": "https://www.npmjs.com/package/mongojs"
+		}],
+		"modified": "FEB 4 2017"
+	}, {
+		"id": "2",
+		"title": "nfxn.PRICE - Capture, Evaluate & Log Script",
+		"description": "Every second this script will scrape currency pair price data for multiple pairs. Every minute this script will evalutate the high, low, open and close price for each pair and log the price in a database. ",
+		"url": "https://github.com/elwoodberry/elwoodberry",
+		"imgurl": "http://trailers.apple.com/trailers/disney/thejunglebook/images/thumbnail_23101.jpg",
+		"stack": [{
+			"id": "00",
+			"package": "Express.js",
+			"url": "https://www.npmjs.com/package/express"
+		}, {
+			"id": "01",
+			"package": "Request",
+			"url": "https://www.npmjs.com/package/request"
+		}, {
+			"id": "02",
+			"package": "Cheerio",
+			"url": "https://www.npmjs.com/package/cheerio"
+		}, {
+			"id": "03",
+			"package": "JSON File",
+			"url": "https://www.npmjs.com/package/jsonfile"
+		}, {
+			"id": "04",
+			"package": "Moment.js",
+			"url": "https://www.npmjs.com/package/moment"
+		}, {
+			"id": "05",
+			"package": "Mongo.js",
+			"url": "https://www.npmjs.com/package/mongojs"
+		}],
+		"modified": "FEB 4 2017"
+	}, {
+		"id": "4",
+		"title": "nfxn.pattern - Monitor, Log and Alert Script",
+		"description": "This script monitors 'nfxn.PRICE' API for different price patterns based on parameters given to the script(timeframe, start time, end time).",
+		"url": "https://github.com/elwoodberry/elwoodberry",
+		"imgurl": "http://static5.gamespot.com/uploads/original/1539/15391776/3099351-screen+shot+2016-07-23+at+1.18.21+pm.png",
+		"stack": [{
+			"id": "00",
+			"package": "Express.js",
+			"url": "https://www.npmjs.com/package/express"
+		}, {
+			"id": "01",
+			"package": "Request",
+			"url": "https://www.npmjs.com/package/request"
+		}, {
+			"id": "02",
+			"package": "Cheerio",
+			"url": "https://www.npmjs.com/package/cheerio"
+		}, {
+			"id": "03",
+			"package": "JSON File",
+			"url": "https://www.npmjs.com/package/jsonfile"
+		}, {
+			"id": "04",
+			"package": "Moment.js",
+			"url": "https://www.npmjs.com/package/moment"
+		}, {
+			"id": "05",
+			"package": "Mongo.js",
+			"url": "https://www.npmjs.com/package/mongojs"
+		}],
+		"modified": "FEB 4 2017"
+	}]
+}]
