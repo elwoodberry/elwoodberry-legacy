@@ -1,0 +1,40 @@
+
+<!--
+NAV.RESUME
+-->
+
+<md-grid-list id="nav-resume" cols="3" rowHeight="50px">
+
+  <md-grid-tile id="tile-left" colspan="1" rowspan="1">
+    <button md-button routerLink="/">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i> <span class="btnLabel">Back</span>
+    </button>
+  </md-grid-tile>
+
+
+  <md-grid-tile id="tile-middle" colspan="1" rowspan="1">
+    <button md-button [mdMenuTriggerFor]="download">
+      <span class="btnLabel">Download</span> <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </button>
+    <md-menu #download="mdMenu">
+      <!-- <button md-menu-item [click]="https://www.iheart.com">PDF Document (.pdf)</button> -->
+      <button md-menu-item (click)="launchResume()">PDF Document (.pdf)</button>
+      <button md-menu-item (click)="launchResume()">Microsoft Word (.docx)</button>
+      <button md-menu-item (click)="launchResume()">Plain Text (.txt)</button>
+    </md-menu>
+  </md-grid-tile>
+
+
+  <md-grid-tile id="tile-right" colspan="1" rowspan="1">
+    <button md-button [mdMenuTriggerFor]="menu">
+        <span class="btnLabel">Settings</span> <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item disabled>
+      You are logged in as: email@domain.com
+      </button>
+      <button md-menu-item (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+    </md-menu>
+  </md-grid-tile>
+
+</md-grid-list>

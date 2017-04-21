@@ -1,0 +1,48 @@
+<div class="row" *ngFor="let job of jobs">
+  <div class="col-md-2">
+  	<img style="width: 70%; margin: 20px auto; display: block;" src="{{job.image}}">
+  </div>
+  <div class="col-md-10">
+
+	<div class="panel" style="padding-top: 20px;">
+		<dl>
+		  <dt style="color: rgba(0, 0, 0, 0.35);">Company</dt>
+		  <dd style="margin-bottom: 25px;">
+		  	<strong style="font-size: 20px; font-family: 'Roboto', sans-serif;">{{job.companyName}}</strong> <br>
+		  	{{job.location}} <br>
+		  	{{job.url}} <br>
+		  </dd>
+
+		  <dt style="color: rgba(0, 0, 0, 0.35);">Industry</dt>
+		  <dd style="margin-bottom: 15px;">{{job.industry}}</dd>
+
+		  <dt style="color: rgba(0, 0, 0, 0.35);">Date</dt>
+		  <dd style="margin-bottom: 15px;">{{job.startDate}} to {{job.endDate}}</dd>
+
+		  <dt style="color: rgba(0, 0, 0, 0.35);">Summary Description</dt>
+		  <dd style="margin-bottom: 15px;">{{job.summary}}</dd>
+
+		  <dt style="color: rgba(0, 0, 0, 0.35); margin-bottom: 12px;">Highlights</dt>
+		  <dd style="margin-bottom: 15px;">
+
+		  	<blockquote *ngFor="let highlight of job.highlights">
+				
+				<p>{{highlight.description}}</p>
+				<small><strong>Project</strong>: {{highlight.name}}</small>
+
+		  	</blockquote>
+		  	
+		  </dd>
+		</dl>
+	</div>
+
+	<div class="divider" style="width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.35); position: relative; margin-bottom: 25px; ">
+		<i class="fa fa-circle" aria-hidden="true" style="position: absolute; top: -8px; left: 50%; color: rgba(0, 0, 0, 0.7);"></i>
+	</div>
+
+  </div>
+
+
+
+</div>
+

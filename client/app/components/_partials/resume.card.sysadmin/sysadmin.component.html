@@ -1,0 +1,48 @@
+<md-card id="cardsysadmin" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>{{sysAdminTitle}}</md-card-title>
+    <md-card-subtitle>{{sysAdminSubtitle}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+
+    <div class="row">
+
+      <div class="col-md-4 elwood-md-4">
+
+        <dl class="description-list">
+          <span *ngFor="let skill of sysAdminSkillSets">
+            <dt>{{skill.label}}</dt>
+            <dd class="description">{{skill.description}}</dd>
+          </span>
+        </dl>
+
+      </div>
+
+      <div class="col-md-8 elwood-md-8">
+
+        <canvas baseChart
+          [datasets]="sysAdminChartData"
+          [labels]="sysAdminChartLabels"
+          [options]="sysAdminChartOptions"
+          [legend]="sysAdminChartLegend"
+          [chartType]="sysAdminChartType"></canvas>
+    
+        <div class="elwood-legend">
+          <ul>
+            <li>0 - 20 = 'Novice'</li>
+            <li>21 - 40 = 'Slightly Dangerous'</li>
+            <li>41 - 60 = 'Expert'</li>
+            <li>61 - 80 = 'Advanced'</li>
+            <li>81 - 100 = 'Rock Star'</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </md-card-content>
+
+</md-card>

@@ -1,0 +1,43 @@
+<md-card id="cardfrontend" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>{{frontendTitle}}</md-card-title>
+    <md-card-subtitle>{{frontendSubtitle}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+    <div class="row">
+      <div class="col-md-4">
+
+        <dl class="description-list">
+          <span *ngFor="let skill of frontendSkillsets">
+            <dt>{{skill.label}}</dt>
+            <dd class="description">{{skill.description}}</dd>
+          </span>
+        </dl>
+
+      </div>
+      <div class="col-md-8">
+
+        <canvas baseChart
+                [datasets]="frontendChartData"
+                [labels]="frontendChartLabels"
+                [options]="frontendChartOptions"
+                [legend]="frontendChartLegend"
+                [chartType]="frontendChartType"></canvas>
+            
+        <div class="elwood-legend">
+          <ul>
+            <li>0 - 20 = 'Novice'</li>
+            <li>21 - 40 = 'Slightly Dangerous'</li>
+            <li>41 - 60 = 'Expert'</li>
+            <li>61 - 80 = 'Advanced'</li>
+            <li>81 - 100 = 'Rock Star'</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </md-card-content>
+
+</md-card>

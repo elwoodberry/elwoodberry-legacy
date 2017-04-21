@@ -1,0 +1,44 @@
+<md-card id="cardoverview" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>Self Taught Education</md-card-title>
+    <md-card-subtitle>Sub title goes here.</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+    <div class="row">
+
+      <div class="col-md-6" *ngFor="let skill of selftaught">
+        
+        <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+          <div class="col-md-4 elwood-md-4">
+            <img [src]="skill.imgurl" id="img" alt="image" style="width: 100%;">
+          </div>
+          <div class="col-md-8">
+
+            <h4>{{skill.skillname}}</h4>
+
+            <br/>
+            <span>{{skill.startDate}}</span>
+            
+            <br/>
+            <h5>Concepts Learned</h5>
+            <ul style="list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-padding-start: 40px;">
+              <li *ngFor="let skill of skill.concepts" style="display: block;">
+                <i class="fa fa-circle" aria-hidden="true" style="font-size: 10px;"></i> {{skill}}
+              </li>
+            </ul>
+            
+            <br/>
+            {{skill.description}}
+
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+
+  </md-card-content>
+
+</md-card>

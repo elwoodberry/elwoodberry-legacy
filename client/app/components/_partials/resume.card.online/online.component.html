@@ -1,0 +1,43 @@
+<md-card id="cardoverview" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>{{title}}</md-card-title>
+    <md-card-subtitle>{{subtitle}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+    <div class="row">
+      
+      <div class="col-md-6" *ngFor="let eskill of online">
+        
+        <div class="row" style="margin-top: 30px; margin-bottom: 30px; height: 300px;">
+          <div class="col-md-4 elwood-md-4">
+            <img [src]="eskill.imgurl" id="img" alt="image" style="width: 100%;">
+          </div>
+          <div class="col-md-8">
+
+            <h4>{{eskill.companyName}}</h4>
+
+            <br/>
+            <span>{{eskill.startDate}} - {{eskill.endDate}}</span>
+            
+            <br/>
+            <h5>Skills Acquired</h5>
+            <ul style="list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-padding-start: 40px;">
+              <li *ngFor="let skill of eskill.skills" style="display: block;">
+                <i class="fa fa-circle" aria-hidden="true" style="font-size: 10px;"></i> {{skill}}
+              </li>
+            </ul>
+            
+            <br/>
+            {{eskill.description}}
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </md-card-content>
+
+</md-card>

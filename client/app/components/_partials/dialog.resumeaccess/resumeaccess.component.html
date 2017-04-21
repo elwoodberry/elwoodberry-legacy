@@ -1,0 +1,27 @@
+<button id="notLoggedIn" *ngIf="!auth.authenticated()" md-raised-button (click)="auth.login()">View My Resume</button>
+
+<button id="loggedIn" *ngIf="auth.authenticated()" md-raised-button routerLink="/resume">View My Resume</button>
+
+<p id="mustBeRegistered">You must be a registered user to access my resume. 
+  <a type="button" data-toggle="modal" data-target="#resumeAccess">Why do I need to be a registered user?</a>
+</p>
+
+<!-- Modal -->
+<div class="modal fade" id="resumeAccess" tabindex="-1" role="dialog" aria-labelledby="resumeAccessLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="resumeAccessLabel">Sorry For The Inconvenience</h4>
+      </div>
+      <div class="modal-body">
+        Due to the high amount of spam inquires via phone, email and social media I have begun requiring that you register to assure you are serious and are a human being.
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Got It!</button>
+
+      </div>
+    </div>
+  </div>
+</div>

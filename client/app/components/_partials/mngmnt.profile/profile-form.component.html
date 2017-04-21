@@ -1,0 +1,302 @@
+<div [hidden]="!submitted">
+	<form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+
+		<!-- FIRST NAME -->
+		<md-input-container style="width: 100%;">
+		  <input 
+		  	md-input 
+		  	required 
+		  	[(ngModel)]="model.firstName" 
+		  	id="firstName" 
+		  	name="firstName" 
+		  	type="text" 
+		  	placeholder="First Name" 
+		  	value="{{model.firstName}}" 
+		  	#firstName="ngModel">
+		</md-input-container>
+
+		<div [hidden]="firstName.valid" class="alert alert-danger">
+		* First name is required.
+		</div>
+
+		<!-- MIDDLE NAME -->
+		<md-input-container style="width: 100%;">
+		  <input 
+		  	md-input 
+		  	required 
+		  	[(ngModel)]="model.middleName" 
+		  	id="middleName" 
+		  	name="middleName" 
+		  	type="text" 
+		  	placeholder="Middle Name" 
+		  	value="{{model.middleName}}" 
+		  	#middleName="ngModel">
+		</md-input-container>
+
+		<div [hidden]="middleName.valid" class="alert alert-danger">
+		* Middle name is required.
+		</div>
+
+		<!-- LAST NAME -->
+		<md-input-container style="width: 100%;">
+		  <input 
+		  	md-input 
+		  	required 
+		  	[(ngModel)]="model.lastName" 
+		  	id="lastName" 
+		  	name="lastName" 
+		  	type="text" 
+		  	placeholder="Last Name" 
+		  	value="{{model.lastName}}" 
+		  	#lastName="ngModel">
+		</md-input-container>
+
+		<div [hidden]="lastName.valid" class="alert alert-danger">
+		* Last name is required.
+		</div>
+
+		<!-- TITLE -->
+		<md-input-container style="width: 100%;">
+			<input
+		  	md-input 
+		  	required 
+		  	[(ngModel)]="model.title" 
+		  	id="title" 
+		  	name="title" 
+		  	type="text" 
+		  	placeholder="Title" 
+		  	value="{{model.title}}" 
+		  	#title="ngModel">
+		</md-input-container>
+
+		<div [hidden]="title.valid" class="alert alert-danger">
+		* Title is required.
+		</div>
+
+		<!-- EMAIL -->
+		<md-input-container style="width: 100%;">
+			<input
+			md-input 
+		  	required 
+		  	[(ngModel)]="model.email" 
+		  	id="email" 
+		  	name="email" 
+		  	type="text" 
+		  	placeholder="Email" 
+		  	value="{{model.email}}" 
+		  	#email="ngModel">
+		</md-input-container>
+
+		<div [hidden]="email.valid" class="alert alert-danger">
+		* Email is required.
+		</div>
+
+		<!-- SUMMARY -->
+		<md-input-container style="width: 100%;">
+			<input
+			md-input 
+		  	required 
+		  	[(ngModel)]="model.summary" 
+		  	id="summary" 
+		  	name="summary" 
+		  	type="text" 
+		  	placeholder="Summary" 
+		  	value="{{model.summary}}" 
+		  	#summary="ngModel">
+		</md-input-container>
+
+		<div [hidden]="summary.valid" class="alert alert-danger">
+		* Summary is required.
+		</div>
+
+		<!-- OBJECTIVE -->
+		<md-input-container style="width: 100%;">
+			<input
+			md-input 
+		  	required 
+		  	[(ngModel)]="model.objective" 
+		  	id="objective" 
+		  	name="objective" 
+		  	type="text" 
+		  	placeholder="Objective" 
+		  	value="{{model.objective}}" 
+		  	#objective="ngModel">
+		</md-input-container>
+
+		<div [hidden]="objective.valid" class="alert alert-danger">
+		* Objective is required.
+		</div>
+
+		<!-- CITIZENSHIP -->
+		<md-input-container style="width: 100%;">
+			<input
+				md-input 
+			  	required 
+			  	[(ngModel)]="model.citizenship" 
+			  	id="citizenship" 
+			  	name="citizenship" 
+			  	type="text" 
+			  	placeholder="Citizenship" 
+			  	value="{{model.citizenship}}" 
+			  	#citizenship="ngModel">
+		</md-input-container>
+
+		<div [hidden]="citizenship.valid" class="alert alert-danger">
+		* Citizenship is required.
+		</div>
+
+		<!-- LANGUAGES -->
+		<md-input-container style="width: 100%;">
+			<input
+			  	md-input 
+			  	required 
+			  	[(ngModel)]="model.language" 
+			  	id="language" 
+			  	name="language" 
+			  	type="text" 
+			  	placeholder="Language" 
+			  	value="{{model.language}}" 
+			  	#language="ngModel">
+		</md-input-container>
+
+		<div [hidden]="language.valid" class="alert alert-danger">
+		* Language is required.
+		</div>
+
+		<!-- LOCATION -->
+		<md-input-container style="width: 100%;">
+			<input
+				md-input 
+			  	required 
+			  	[(ngModel)]="model.location" 
+			  	id="location" 
+			  	name="location" 
+			  	type="text" 
+			  	placeholder="Location" 
+			  	value="{{model.location}}" 
+			  	#location="ngModel">
+		</md-input-container>
+
+		<div [hidden]="location.valid" class="alert alert-danger">
+		* Location is required.
+		</div>
+
+		<!-- PERIOD -->
+		<md-input-container style="width: 100%;">
+			<input
+				md-input 
+			  	required 
+			  	[(ngModel)]="model.period" 
+			  	id="period" 
+			  	name="period" 
+			  	type="text" 
+			  	placeholder="Career Length" 
+			  	value="{{model.period}}" 
+			  	#period="ngModel">
+		</md-input-container>
+
+		<div [hidden]="period.valid" class="alert alert-danger">
+		* Career length is required.
+		</div>
+
+		<!-- PHONE -->
+		<md-input-container style="width: 100%;">
+			<input
+				md-input 
+			  	required 
+			  	[(ngModel)]="model.phone" 
+			  	id="phone" 
+			  	name="phone" 
+			  	type="text" 
+			  	placeholder="Phone" 
+			  	value="{{model.phone}}" 
+			  	#phone="ngModel">
+		</md-input-container>
+
+		<div [hidden]="phone.valid" class="alert alert-danger">
+		* Phone number is required.
+		</div>
+
+		<!-- WEBSITE -->
+		<md-input-container style="width: 100%;">
+			<input
+			  	md-input 
+			  	required 
+			  	[(ngModel)]="model.website" 
+			  	id="website" 
+			  	name="website" 
+			  	type="text" 
+			  	placeholder="Website URL" 
+			  	value="{{model.website}}" 
+			  	#website="ngModel">
+		</md-input-container>
+
+		<div [hidden]="website.valid" class="alert alert-danger">
+		* Website number is required.
+		</div>
+
+
+		<!--
+		TODO: REMOVE 'Alter Ego' & 'Power'
+		-->
+
+		<md-input-container style="width: 100%;">
+		  <input 
+		  	md-input
+		  	[(ngModel)]="model.alterEgo" 
+		  	id="alterEgo" 
+		  	name="alterEgo" 
+		  	type="text" 
+		  	placeholder="Alter Ego" 
+		  	value="{{model.alterEgo}}" 
+		  	#alterEgo="ngModel">
+		</md-input-container>
+
+		<div style="margin: 10px 0;">
+			<md-select placeholder="Hero Power" id="power" required [(ngModel)]="model.power" name="power" style="width: 100%;">
+			  <md-option *ngFor="let pow of powers" [value]="pow">{{pow}}</md-option>
+			</md-select>
+		</div>
+
+		<button 
+			md-raised-button
+			type="submit" 
+			[disabled]="!profileForm.form.valid"
+			style="width: 100%; margin: 15px 0; background-color: rgba(119, 255, 0, 0.5);">Update</button>
+
+	</form>
+</div>
+
+
+
+
+<div [hidden]="submitted">
+	<dl> 
+		<dt>Name</dt> 
+		<dd>{{model.firstName}} {{model.middleName}} {{model.lastName}}</dd> 
+		<dt>Title</dt> 
+		<dd>{{model.title}}</dd>
+		<dt>Email</dt> 
+		<dd>{{model.email}}</dd> 
+		<dt>Summary</dt> 
+		<dd>{{model.summary}}</dd>
+		<dt>Objective</dt>
+		<dd>{{model.objective}}</dd>
+		<dt>Citizenship</dt>
+		<dd>{{model.citizenship}}</dd>
+		<dt>Language</dt>
+		<dd>{{model.language}}</dd>
+		<dt>Location</dt>
+		<dd>{{model.location}}</dd>
+		<dt>Career Length</dt>
+		<dd>{{model.period}}</dd>
+		<dt>Phone</dt>
+		<dd>{{model.phone}}</dd>
+		<dt>Website</dt>
+		<dd>{{model.website}}</dd>
+	</dl>
+	<button 
+		md-raised-button 
+		style="width: 100%; margin: 15px 0; background-color: rgba(119, 255, 0, 0.5);" 
+		(click)="submitted=true">Edit</button>
+</div>

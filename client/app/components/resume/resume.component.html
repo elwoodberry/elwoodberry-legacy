@@ -1,0 +1,78 @@
+<navresume></navresume>
+
+<md-sidenav-container class="elwood-sidenav-container">
+  
+  <navuser></navuser>
+  
+  <div class="container" style="background-color: rgba(155, 255, 0, 0.0); padding-bottom: 20px; padding-top: 40px;">
+
+    
+    <h2 style="font-family: 'Roboto', sans-serif; margin-bottom: -2px;">{{firstName}} {{middleName}} {{lastName}}</h2>
+    <span style="font-family: 'Roboto', sans-serif; margin-bottom: 20px; display: block;">{{title}}</span>
+    
+<!--
+    <h2 style="font-family: 'Roboto', sans-serif; margin-bottom: -2px;">Hard Coded Name</h2>
+    <span style="font-family: 'Roboto', sans-serif; margin-bottom: 20px; display: block;">Hard Coded Title</span>
+-->
+    <md-tab-group>
+
+      <md-tab label="Overview">
+
+        <cardoverview></cardoverview>
+
+        <cardsysadmin></cardsysadmin>
+
+        <cardwebdev></cardwebdev>
+
+        <cardbackend></cardbackend>
+
+        <cardfrontend></cardfrontend>
+
+        <carddesign></carddesign>
+
+        <cardmobileux></cardmobileux>
+
+      </md-tab>
+      
+
+      <md-tab label="Qualifications">
+
+        <cardqualify></cardqualify>
+
+        <cardcollege></cardcollege>
+        
+        <cardonjob></cardonjob>
+
+        <cardonline></cardonline>
+        
+        <cardself></cardself>
+
+      </md-tab>
+
+      <md-tab label="Experience">
+        <experience></experience>
+      </md-tab>
+
+      <md-tab label="Contact">
+        <contacttab></contacttab>
+      </md-tab>
+
+    </md-tab-group>
+
+    <!-- 
+    This application was developed by Elwood S. Berry III, Full Stack JavaScript Developer located in Blacklick, OH. Download The Source Code To This Single Page Application(SPA)
+    Last Updated: April 1, 2017
+    -->
+    <div class="row" style="margin-top: 20px; border-top: 1px solid #d4d4d4; padding-top: 20px;">
+      <div class="col-md-2">
+        Last Updated: April 1, 2017
+      </div>
+      <div class="col-md-10">
+        This application was developed by Elwood S. Berry III, Full Stack JavaScript Developer located in Blacklick, OH.
+
+        <a href="" target="_blank" title="The Source Code To This Single Page Application(SPA).">Download The Source Code To This Single Page Application(SPA).</a>
+      </div>
+    </div>
+
+  </div> 
+</md-sidenav-container>

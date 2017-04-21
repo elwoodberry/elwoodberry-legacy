@@ -1,0 +1,76 @@
+<md-card id="cardoverview" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>{{overviewTitle}}</md-card-title>
+    <md-card-subtitle>{{overviewSubtitle}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+    <div class="row">
+      <div class="col-md-4 elwood-md-4">
+        <canvas baseChart
+                    [data]="overviewChartData"
+                    [labels]="overviewChartLabels"
+                    [chartType]="overviewChartType"
+                    [legend]="overviewChartLegend"></canvas>
+      </div>
+      <div class="col-md-8 elwood-md-8">
+        <div class="row">
+
+          <!--
+          TODO: CREATE *ngFor
+          -->
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel"> 
+              <i class="fa fa-cog elwood-fa" style="background-color: #ffa1b5;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">System Admin</div>
+              <div id="value" class="panel-body elwood-body">10%</div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel">
+              <i class="fa fa-desktop elwood-fa" style="background-color: #86c7f3;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">Web Development</div>
+              <div id="value" class="panel-body elwood-body">12%</div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel">
+              <i class="fa fa-database elwood-fa" style="background-color: #ffe199;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">Back End Development</div>
+              <div id="value" class="panel-body elwood-body">10%</div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel">
+              <i class="fa fa-code elwood-fa" style="background-color: #f0f2f4;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">Front End Development</div>
+              <div id="value" class="panel-body elwood-body">27%</div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel">
+              <i class="fa fa-pencil elwood-fa" style="background-color: #93d9d9;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">Design</div>
+              <div id="value" class="panel-body elwood-body">27%</div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 elwood-md-4">
+            <div class="panel elwood-panel">
+              <i class="fa fa-mobile elwood-fa" style="background-color: #c0d6e1;" aria-hidden="true"></i>
+              <div id="headingOne" class="panel-heading elwood-heading">Mobile</div>
+              <div id="value" class="panel-body elwood-body">14%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </md-card-content>
+
+</md-card>

@@ -1,0 +1,46 @@
+<md-card id="cardoverview" class="elwood-card">
+
+  <md-card-header>
+    <md-card-title>{{title}}</md-card-title>
+    <md-card-subtitle>{{subtitle}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+    <div class="row">
+      
+      <div class="col-md-6" *ngFor="let college of colleges">
+        
+        <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+          <div class="col-md-4 elwood-md-4">
+            <img [src]="college.imgurl" id="img" alt="image" style="width: 100%;">
+          </div>
+          <div class="col-md-8">
+
+            <h4>{{college.companyName}}</h4>
+
+            <br/>
+            <span>{{college.city}}, {{college.state}}</span>
+
+            <br/>
+            <span>{{college.startDate}} - {{college.endDate}}</span>
+            
+            <br/>
+            <h5>Skills Acquired</h5>
+            <ul style="list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-padding-start: 40px;">
+              <li *ngFor="let skill of college.skills" style="display: block;">
+                <i class="fa fa-circle" aria-hidden="true" style="font-size: 10px;"></i> {{skill}}
+              </li>
+            </ul>
+            
+            <br/>
+            {{college.description}}
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </md-card-content>
+</md-card>
