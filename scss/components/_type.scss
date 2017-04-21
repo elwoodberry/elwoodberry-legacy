@@ -1,0 +1,103 @@
+
+
+/*
+
+Lists
+----------------------
+*/
+
+ol, ul {
+	display: block;
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	-webkit-padding-start: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+
+	li {
+		display: inline-block;
+		text-align: -webkit-left;
+
+		a {
+			display: block;
+		}
+	}
+}
+
+
+/*
+
+Horizontal description lists
+----------------------
+Defaults to being stacked without any of the below styles applied, 
+until the grid breakpoint is reached (default has been extended to 320px).
+*/
+
+
+.dl-horizontal {
+
+  @media (min-width: 320px) {
+    dt {
+      float: left;
+      width: 65px;
+      clear: left;
+      text-align: right;
+    }
+    dd {
+      margin-left: 75px;
+    }
+  }
+}
+
+
+
+/*
+
+Elwood Description List
+----------------------
+Created for the 'Overview' tab for Resume
+*/
+.description-list {
+  margin-left: 20px;
+  margin-top: 50px;
+
+	.description {
+	  color: rgba(0, 0, 0, 0.45);
+	  margin-bottom: 20px;
+	}
+}
+
+
+
+
+/*
+
+Chart Legend
+----------------------
+Created for the charts in the 'Overview' tab for Resume
+*/
+.elwood-legend {
+  background-color: rgba(0, 0, 0, 0.05); 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  font-size: 11px; 
+  margin-top: 20px; text-align: center;
+  padding: 5px;
+
+  ul {
+  	li {
+		border-right: 1px solid; 
+		margin-right: 10px;
+		padding-right: 10px;
+  	}
+  	li:last-child {
+		border-right: none; 
+		margin-right: 10px;
+		padding-right: 10px;
+  	}
+  }
+}
+
+

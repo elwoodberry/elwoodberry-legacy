@@ -1,0 +1,13 @@
+/*
+
+Panel
+Parent: 'panel'
+URL: http://getbootstrap.com/components/#panel
+--------------------------------------------------
+*/
+.panel {
+	@include border-radius(0);
+	background-color: transparent;
+	border: none;
+    box-shadow: none;
+}

@@ -1,0 +1,50 @@
+/*
+
+NAV.RESUME
+Navigation For Resume
+See 'elwoodberry/client/app/components/_partials/nav.resume'
+
+--------------------------------------------------
+*/
+
+#nav-resume {
+	/* background-color: rgba(0, 0, 0, 0.0); */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	color:#000;
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+
+	.btnLabel {
+		display: none;
+	}
+
+
+	#tile-left {
+		button {
+			left: 0;
+			position: absolute;
+		}
+	}
+	#tile-middle {}
+	#tile-right {
+		button {
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	#nav-resume {
+		.btnLabel {
+			display: inline-block;
+		}
+	}
+
+}

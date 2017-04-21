@@ -1,0 +1,14 @@
+
+
+@mixin animation($delay, $duration){
+	-webkit-animation-delay: $delay;
+	/* -webkit-animation-direction: alternate; */
+	-webkit-animation-duration: $duration;
+	-webkit-animation-iteration-count: infinite;
+	/* -webkit-animation-timing-function: linear; */
+	animation-delay: $delay;
+	/* animation-direction: alternate; */
+	animation-duration: $duration;
+	animation-iteration-count: infinite;
+	/* animation-timing-function: linear; */
+}

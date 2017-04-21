@@ -1,0 +1,45 @@
+/*
+
+PROJECTS (Global)
+Used for he display of projects in the Github repositories.
+
+Used for the following application components:
+ - home.github
+ - resume.card.webdev
+
+Component Location: 'client/app/components/_partials/global.projects'
+Last Updated: April 2017
+
+--------------------------------------------------
+*/
+
+#github-projects {
+	.col-md-3 {
+		.project-url {
+			text-decoration: none;
+
+			.project-image {
+				background-position: center center;
+				background-size: cover;
+				display: block;
+				height: 150px;
+				width: 100%;
+			}
+
+			.project-title {
+				color: #000;
+			}
+
+			.project-description {
+				color: #000;
+			}
+
+			.project-techstack {
+
+				li {
+					display: block;
+				}
+			}
+		}
+	}
+}

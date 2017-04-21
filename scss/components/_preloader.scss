@@ -1,0 +1,139 @@
+.preloader {
+	background-color: transparent;
+	color: $base-red;
+	height: 100%;
+	left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .canvas {
+        background-color: transparent;
+        display: block;
+        height: 180px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+
+        &:after {
+            border-top: 1px solid #EEE;
+            bottom: -60px;
+            content: "Loading";
+            padding: 10px 0 0 0;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            @include base-font;
+        }
+
+        .ebounce {
+            animation: ball;
+            background-color: transparent;
+            border-radius: 100%;
+            height: 50px;
+            left: 50%;
+            margin: 0 0 0 -25px;
+            position: absolute;
+            top: 10px;
+            width: 50px;
+            @include animation(0s, 1s);
+        }
+
+        .letter {
+            animation-name: letter;
+            display: block;
+            font-size: 48px;
+            text-align: center;
+            @include animation(0s, 1s);
+        }
+
+    }
+}
+
+@keyframes ball {
+    0%   { top: 6px; }
+    5%   { top: 8px; }
+    10%  { top: 12px; }
+    15%  { top: 20px; }
+    20%  { top: 38px; }
+    25%  { top: 72px; }
+    30%  { top: 100px; }
+    35%  { top: 152px; }
+    40%  { 
+        height: 46px;
+        margin-left: -27px;
+        top: 154px;
+        width: 54px;
+    }
+
+    50%  { 
+        height: 24px;
+        margin-left: -36px;
+        top: 176px;
+        width: 72px;
+    }
+    55%  { 
+        height: 38px;
+        margin-left: -29px;
+        top: 162px;
+        width: 58px;
+    }
+    60%  { 
+        height: 48px;
+        margin-left: -26px;
+        top: 138px;
+        width: 52px;
+    }
+    65%  { 
+        height: 50px;
+        top: 110px;
+        width: 50px;
+    }
+    70%  { top: 72px; }
+    75%  { top: 38px; }
+    80%  { top: 20px; }
+    85%  { top: 12px; }
+    90%  { top: 8px; }
+    95%  { top: 5px; }
+    100% { top: 5px; }
+}
+
+@keyframes letter {
+    0%   {}
+    5%   {}
+    10%  {}
+    15%  {}
+    20%  {}
+    25%  {}
+    30%  {}
+    35%  {}
+
+    40%  {
+        @include transform-scale(1.1,.85);
+    }
+    50%  {
+        @include transform-scale(2,.5);
+
+    }
+    55%  {
+        @include transform-scale(1.1,.85);
+    }
+    60%  {
+        @include transform-scale(1,1);
+    }
+    65%  {
+        @include transform-scale(1,1);
+    }
+    70%  {}
+    75%  {}
+    80%  {}
+    85%  {}
+    90%  {}
+    95%  {}
+    100% {}
+}
+
+
+

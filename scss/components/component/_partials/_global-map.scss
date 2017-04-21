@@ -1,0 +1,44 @@
+/*
+
+MAP (Global)
+Displays the map of Blacklick, Ohio
+
+Used for the following application components:
+ - 'client/app/components/_partials/home.footer'
+ - 'client/app/components/_partials/resume.contact'
+
+Component Location: 'client/app/components/_partials/global.map'
+Last Updated: April 2017
+
+--------------------------------------------------
+*/
+
+.transparency-sebm-google-map {
+	background-color: rgba(255, 255, 255, 0.05);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.google-map-image {
+	background-color: #4e98d8; 
+	background-image: url(img/blacklick-map.png); 
+	background-size: cover;
+	position: absolute; 
+	height: 100%; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	z-index: 1; 
+}
+.sebm-google-map-container {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}

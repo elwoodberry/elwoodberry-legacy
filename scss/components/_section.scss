@@ -1,0 +1,51 @@
+section {
+	border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+
+	.container {
+		position: relative;
+		z-index: 100;
+    
+		ol, ul {
+			li {
+				a {
+					img {
+						width: 175px;
+					}
+				}
+			}
+		}
+
+		h3 {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+			color: rgba(0, 0, 0, 0.39);
+			font-family: Roboto,sans-serif;
+			font-size: 14px;
+			margin-top: 10px;
+			padding: 5px 0;
+			text-align: center;
+		}
+
+		.row {
+			div[class*="col"] {
+				a {
+				    display: block;
+					height: 100%;
+					width: 100%;
+
+					img {
+						width: 100%;
+					}
+				}
+
+			} 
+		}
+	}
+}
+
+
+
+@media (min-width: 768px){}
+
+@media (min-width: 992px){}
+
+@media (min-width: 1200px) {}

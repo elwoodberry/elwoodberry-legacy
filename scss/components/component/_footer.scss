@@ -1,0 +1,70 @@
+/*
+
+Footer
+
+--------------------------------------------------
+*/
+
+footer {
+	background-color: rgba(0, 0, 0, 0.0);
+	height: 325px;
+	overflow: hidden;
+    position: relative;
+
+    section.container-fluid {
+    	height: inherit;
+
+        .container {
+			background-color: rgba(0, 0, 0, 0.0);
+			height: inherit;
+			left: 0;
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%; 
+			z-index: 100;
+
+			.row {
+				height: inherit;
+
+				.col-md-6 {
+					height: inherit;
+
+					.contact-panel {
+						background-color: rgba(238, 238, 238, 0.8);
+						border: 1px solid #DDD;
+						border-top: none;
+						left: 25%;
+						padding: 25px;
+						position: absolute;
+						top: 0;
+
+						h1 {
+							font-family: 'Roboto', sans-serif;
+						}
+
+						.social-icons {
+							margin-top: 15px;
+							
+							a {
+								background-color: rgba(255, 255, 255, 0.4);
+								border: 1px solid;
+								display: inline-block;
+								font-size: 20px;
+								padding: 3px;
+								text-align: center;
+								width: 22%;
+
+								i {
+
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}	
+	}
+}

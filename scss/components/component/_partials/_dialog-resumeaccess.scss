@@ -1,0 +1,31 @@
+/*
+
+DIALOG ACCESS
+The button and modal used in the home component.
+
+Component Location: 'client/app/components/_partials/dialog.resumeaccess'
+Last Updated: April 2017
+
+--------------------------------------------------
+*/
+
+#notLoggedIn {
+	background-color: rgba(224, 224, 224, 0.8);
+}
+
+#loggedIn {
+	background-color: rgba(255, 0, 0, 0.8);
+	color: #FFF;
+}
+
+#mustBeRegistered {
+	font-size: 12px;
+
+	a {
+		cursor: pointer;
+	}
+}
+
+button {
+	width: 100%;
+}

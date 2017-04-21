@@ -1,0 +1,21 @@
+
+
+
+
+/*
+Colors
+*/
+$base-red: #E9413D !default;
+
+$gray-base: #000 !default;/* #000 !default */
+$gray-darker: #000 !default;/* lighten($gray-base, 13.5%) !default */
+$gray-dark: #000 !default;/* lighten($gray-base, 20%) !default */
+$gray: #000 !default;/* lighten($gray-base, 33.5%) !default */
+$gray-light: #000 !default;/* lighten($gray-base, 46.7%) !default */
+$gray-lighter: #000 !default;/* lighten($gray-base, 93.5%) !default */
+
+$brand-primary: #000 !default;/* darken(#428bca, 6.5%) !default */
+$brand-success: #000 !default;/* #5cb85c !default */
+$brand-info: #000 !default;/* #5bc0de !default */
+$brand-warning: #000 !default;/* #f0ad4e !default */
+$brand-danger: #000 !default;/* #d9534f !default */
